@@ -37,4 +37,4 @@ with open("collider.log", 'a') as logfile:
 
 
 # Start LBC
-os.system("cd /home/shardbearer/collider && sudo ./LBC --address "+items['btc-address']+" --id "+items["lbc-id"]+" --secret "+items["lbc-secret"]+" --cpus 24 >> collider.log & 2>&1")
+os.system("cd /home/shardbearer/lbc-gce && sudo ./LBC --address "+items['btc-address']+" --id "+items["lbc-id"]+" --secret "+items["lbc-secret"]+" --cpus 24 >> collider.log & 2>&1")
