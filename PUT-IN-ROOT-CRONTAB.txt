@@ -1,3 +1,4 @@
-@reboot sudo /usr/bin/python3 /home/shardbearer/collider/startCollider.py >> /home/shardbearer/collider/collider.log 2>&1
-* * * * * sudo /home/shardbearer/collider/checkFound.sh >> /home/shardbearer/collider/collider.log 2>&1
-*/10 * * * * sudo /usr/bin/python3 /home/shardbearer/collider/restartInstances.py >> /home/shardbearer/collider/colliderRestart.log 2>&1
+# Run sudo crontab -e and then paste these lines in:
+@reboot sudo /usr/bin/python3 /home/shardbearer/lbc-gce/startCollider.py >> /home/shardbearer/lbc-gce/lbc-gce.log 2>&1
+* * * * * sudo /home/shardbearer/lbc-gce/checkFound.sh >> /home/shardbearer/lbc-gce/lbc-gce.log 2>&1
+*/10 * * * * sudo /usr/bin/python3 /home/shardbearer/lbc-gce/restartInstances.py >> /home/shardbearer/lbc-gce/lbc-gceRestart.log 2>&1
